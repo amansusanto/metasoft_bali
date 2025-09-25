@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metasoft</title>
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container mx-auto w-full">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="font-bold text-lg text-primary block py-6"
+              >Metasoft</a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburder"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition ease-in-out origin-top-left"
+              ></span>
+              <span class="hamburger-line transition ease-in-out"></span>
+              <span
+                class="hamburger-line transition ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-3 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href="#portfolio"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                  >
+                    Portfolio
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href="#clients"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                  >
+                    Client
+                  </a>
+                </li>
+
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section -->
+
+    <!-- Company Section -->
+    <div id="home" class="pt-36">
+      <div class="container mx-auto w-full">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl">
+              Halo semua 👋🏻, selamat datang di
+              <span class="block font-bold text-dark text-3xl mt-1 lg:text-5xl"
+                >Metasoft-bali.com</span
+              >
+            </h1>
+            <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">
+              Desktop & <span class="text-dark">Web Developer</span>
+            </h2>
+            <p class="font-medium text-secondary mb-10 leading-relaxed">
+              Metasoft-bali, Bringing Your Ideas to Life with Code.
+            </p>
+            <a
+              href="#"
+              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+              >Contact me</a
+            >
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="mt-10 relative lg:mt-0 lg:right-0">
+              <img src="./dist/img/golang.png" class="max-w-full mx-auto" />
+              <span
+                class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125"
+              >
+                <svg
+                  width="400"
+                  height="400"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#08BDBA"
+                    d="M66.6,-37.3C80.2,-14.8,81.1,16.2,67.8,26.3C54.6,36.3,27.3,25.2,0.1,25.2C-27.1,25.1,-54.3,36.1,-61.8,29.3C-69.4,22.6,-57.4,-1.8,-43.9,-24.3C-30.3,-46.8,-15.2,-67.4,5.7,-70.7C26.5,-74,52.9,-59.9,66.6,-37.3Z"
+                    transform="translate(100 100)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Company Section -->
+
+    <!-- About Section -->
+    <section id="about" class="pt-10 pb-10">
+      <div class="container mx-auto w-full">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4 class="font-bold uppercase text-primary text-lg mb-3">
+              About Me
+            </h4>
+            <h2 class="font-bold text-dark text-3xl mb-5 max-w-md">
+              Let's talk about future
+            </h2>
+            <p class="font-medium text-base text-secondary max-w-xl">
+              Membuat aplikasi Desktop dan web interaktif dan responsif berbasis
+              teknologi terkini. app yang dikembangkan dapat diakses dari mana
+              saja, memiliki keamanan terjamin, dan didesain untuk memberikan
+              pengalaman pengguna yang optimal
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3 class="font-semibold text-dark text-2xl mb-4">Follow Me</h3>
+            <p class="font-medium text-base text-secondary mb-6">
+              Flow me on social media and let's get in touch!
+            </p>
+            <div class="flex items-center">
+              <!-- Youtube -->
+              <a
+                href="#"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  class="fill-current"
+                >
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="pt-16 pb-5 bg-slate-100">
+      <div class="container mx-auto w-full">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
+            <p class="font-medium text-md text-secondary">
+                Berikut adalah beberapa hasil karya yang telah saya buat, mulai dari Ecommerce interaktif hingga rental system. 
+                Setiap proyek dirancang dengan fokus pada kebutuhan klien, mengutamakan tampilan yang menarik, fungsionalitas yang optimal, 
+                dan pengalaman pengguna yang responsif. Memastikan hasil akhir sesuai dengan visi dan harapan Anda.
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+        >
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="./dist/img/p1.png" alt="asfa" class="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              Ecommerce Website
+            </h3>
+            <p class="font-medium text-base text-secondary">
+              Platform e-commerce kami telah dilengkapi dengan sistem pengiriman otomatis melalui GoSend dan pembayaran mudah menggunakan BCA Virtual Account.
+<br/>
+🚚 GoSend Integration → Pesanan langsung terkoneksi dengan kurir, pengiriman cepat dan real-time tracking untuk pembeli.
+<br/>
+
+💳 BCA Virtual Account → Pembayaran lebih praktis, aman, dan otomatis terverifikasi tanpa perlu konfirmasi manual.
+<br/>
+
+Dengan integrasi ini, proses belanja jadi lebih mudah, cepat, dan terpercaya, baik untuk penjual maupun pembeli.
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="./dist/img/p2.png" alt="asfa" class="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              Desktop Application
+            </h3>
+            <div>
+              <p>Solusi lengkap yang menggabungkan aplikasi desktop cepat dan stabil, modul inventory accounting yang akurat, serta fitur CoreTax untuk menangani perhitungan pajak dengan mudah. Cocok untuk UMKM hingga usaha menengah.
+</p>
+                <ul class="space-y-3">
+<li class="flex items-start gap-3"><span class="text-indigo-600 font-bold">•</span> Sinkronisasi stok real-time dan pelacakan batch/serial.</li>
+<li class="flex items-start gap-3"><span class="text-indigo-600 font-bold">•</span> Laporan akuntansi standar (Neraca, Laba Rugi, Arus Kas).</li>
+<li class="flex items-start gap-3"><span class="text-indigo-600 font-bold">•</span> Perhitungan pajak otomatis dan integrasi CoreTax untuk SPT dan PPN.</li>
+</ul>            </div>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="./dist/img/p3.png" alt="asfa" class="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              Payroll Application
+            </h3>
+            <div>
+            <h2 class="text-3xl font-extrabold mb-4">Solusi Payroll Otomatis, Akurat & Sesuai Peraturan</h2>
+            <p class="text-gray-600 mb-6">Sistem payroll kami dirancang untuk menghitung gaji karyawan tetap maupun karyawan shift secara otomatis, termasuk penghitungan keterlambatan, lembur, potongan, tunjangan, serta perhitungan pajak (PPh) sesuai aturan.</p>
+            <ul class="space-y-3">
+            <li class="flex items-start gap-3"><span class="text-green-600 font-bold">•</span> Mendukung jadwal kerja shift, rotasi, dan jam fleksibel.</li>
+            <li class="flex items-start gap-3"><span class="text-green-600 font-bold">•</span> Hitung lembur otomatis berdasarkan aturan perusahaan dan perundangan.</li>
+            <li class="flex items-start gap-3"><span class="text-green-600 font-bold">•</span> Perhitungan PPh 21 otomatis dan penyajian slip gaji digital.</li>
+            </ul>
+            </div>       
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="./dist/img/p5.png" alt="asfa" class="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              Restaurant Aplication
+            </h3>
+            <div class="span font-medium text-base text-secondary">
+           Our all-in-one restaurant app is designed to help you manage your culinary business effortlessly. From ordering, POS, inventory tracking, table reservations, delivery integration, to financial reporting — everything is connected in a single powerful system.
+            Key Benefits:
+            <p>✅ Fast ordering with kitchen integration</p>
+            <p>✅ Real-time stock & ingredient management</p>
+            <p>✅ Flexible payments: cash, card, QRIS, e-wallet, VA</p>
+            <p>✅ Automated sales & profit reports</p>
+            <p>✅ Works for restaurants, cafés, and even franchises</p>
+            </div>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="./dist/img/p4.png" alt="asfa" class="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              Rental System
+            </h3>
+           <div>
+<h2 class="text-3xl font-extrabold mb-4">Sistem Rental Peralatan Acara yang Mudah & Terintegrasi</h2>
+<p class="text-gray-600 mb-6">Kelola ketersediaan alat, pantau stok tersisa, buat tagihan otomatis, cetak surat jalan, dan hasilkan laporan keuangan untuk mengetahui profitabilitas usaha rental Anda.</p>
+<ul class="space-y-3">
+<li class="flex items-start gap-3"><span class="text-yellow-500 font-bold">•</span> Pemantauan stok real-time: <strong>tersisa</strong> vs <strong>tersedia</strong>.</li>
+<li class="flex items-start gap-3"><span class="text-yellow-500 font-bold">•</span> Pembuatan tagihan & invoice otomatis untuk setiap order.</li>
+<li class="flex items-start gap-3"><span class="text-yellow-500 font-bold">•</span> Cetak Surat Jalan (DO) lengkap dengan daftar item dan tanda terima.</li>
+</ul>
+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio -->
+
+    <!-- Client -->
+    <section id="clients" class="pt-20 pb-10 bg-slate-700">
+      <div class="container w-full mx-auto">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h2 class="font-semibold text-lg text-primary mb-2">Clients</h2>
+            <h4 class="font-bold text-white text-3xl mb-4">
+              Jenis Bidang Usaha yang Telah Bekerjasama dengan Kami 
+            </h4>
+            <p class="font-medium text-md text-secondary">
+              Supplier Bahan Bangunan, Supplier Alat Tulis, Supplier Komputer, Sekolah, Toko Listrik, Toko Perlengkapan Kantor, Ecommerce, Payroll, dll
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full px-4">
+        <div class="flex flex-wrap items-center justify-center">
+          <a
+            href="#"
+            class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration 500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+          >
+            <img src="./dist/img/google.svg" alt="Google" />
+          </a>
+          <a
+            href="#"
+            class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration 500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+          >
+            <img src="./dist/img/tokopedia.png" alt="Tokopedia" />
+          </a>
+          <a
+            href="#"
+            class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration 500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+          >
+            <img src="./dist/img/grab.png" alt="Grab" />
+          </a>
+          <a
+            href="#"
+            class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration 500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+          >
+            <img src="./dist/img/amazon.svg" alt="Amazon" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Client -->
+
+    <!-- Blog -->
+    <section id="contact" class="pt-20 pb-20 bg-slate-100">
+      <div class="container w-full mx-auto">
+        <div class="w-full px-4">
+          <h4 class="font-semibold text-lg text-primary mb-2">Contact Me</h4>
+          <p class="font-medium text-md text-secondary">
+            Email : metasoft@gmail.com<br/>Phone : 081805073254</br>
+            Address : Denpasar - Bali
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-wrap"></div>
+    </section>
+    <!-- Blog -->
+
+    <!-- Footer -->
+    <footer class="bg-dark pt-24 pb12">
+      <div class="container w-full mx-auto">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+            <h2 class="text-white mb-5 font-bold text-4xl">Metasoft</h2>
+            <h2>From Imagination to Innovation with Code</h2>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <script src="./dist/js/script.js"></script>
+  </body>
+</html>
