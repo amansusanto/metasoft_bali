@@ -1,199 +1,133 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WA Messenger Otomasi</title>
-    <link href="././css/style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-gray-50 text-gray-800">
-    <div class="max-w-6xl mx-auto p-6">
-      <header class="mb-8 text-center">
-        <h1 class="text-4xl font-bold text-indigo-700">WA Messenger Otomasi</h1>
-        <p class="text-gray-600 mt-2 max-w-2xl mx-auto">
-          Layanan API untuk mengirim pesan WhatsApp secara otomatis kepada
-          pelanggan — cocok untuk pengumuman, pengiriman nota penjualan, dan
-          pengingat tagihan yang jatuh tempo.
+    <header class="bg-green-600 text-white py-6 shadow">
+      <div
+        class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <i class="ri-whatsapp-line text-4xl"></i>
+          <h1 class="text-3xl font-bold">WA Messenger Otomasi</h1>
+        </div>
+        <p class="text-lg mt-2 md:mt-0">
+          Solusi pengiriman pesan WhatsApp otomatis untuk bisnis Anda
         </p>
-      </header>
+      </div>
+    </header>
 
-      <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <!-- Form Panel -->
-        <div class="bg-white rounded-2xl shadow p-6">
-          <form class="space-y-8">
-            <!-- Pengumuman -->
-            <div>
-              <h2 class="text-xl font-semibold text-indigo-700 mb-3">
-                Kirim Pengumuman
-              </h2>
-              <div class="space-y-3">
-                <div>
-                  <label class="block text-sm text-gray-600"
-                    >Nomor Tujuan</label
-                  >
-                  <input
-                    type="text"
-                    placeholder="6281234567890"
-                    class="mt-1 w-full border rounded-md p-2"
-                  />
-                </div>
-                <div>
-                  <label class="block text-sm text-gray-600">Pesan</label>
-                  <textarea
-                    rows="3"
-                    placeholder="Halo! Ini pengumuman dari kami."
-                    class="mt-1 w-full border rounded-md p-2"
-                  ></textarea>
-                </div>
-                <button
-                  type="button"
-                  class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700"
-                >
-                  Kirim
-                </button>
-              </div>
-            </div>
+    <main class="container mx-auto px-6 py-12">
+      <section class="mb-12 text-center">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+          alt="WhatsApp"
+          class="w-24 h-24 mx-auto mb-6"
+        />
+        <h2 class="text-2xl font-semibold mb-4">
+          Tingkatkan Efisiensi Komunikasi Bisnis Anda
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Dengan <strong>WA Messenger Otomasi</strong>, Anda dapat mengirim
+          pesan WhatsApp ke pelanggan secara otomatis melalui API yang mudah
+          diintegrasikan ke sistem atau aplikasi yang sudah Anda miliki.
+        </p>
+      </section>
 
-            <!-- Nota Penjualan -->
-            <div>
-              <h2 class="text-xl font-semibold text-green-700 mb-3">
-                Kirim Nota Penjualan
-              </h2>
-              <div class="space-y-3">
-                <div>
-                  <label class="block text-sm text-gray-600"
-                    >Nomor Tujuan</label
-                  >
-                  <input
-                    type="text"
-                    placeholder="6281234567890"
-                    class="mt-1 w-full border rounded-md p-2"
-                  />
-                </div>
-                <div>
-                  <label class="block text-sm text-gray-600">Nomor Nota</label>
-                  <input
-                    type="text"
-                    placeholder="INV-001"
-                    class="mt-1 w-full border rounded-md p-2"
-                  />
-                </div>
-                <div>
-                  <label class="block text-sm text-gray-600">Link PDF</label>
-                  <input
-                    type="text"
-                    placeholder="https://example.com/nota.pdf"
-                    class="mt-1 w-full border rounded-md p-2"
-                  />
-                </div>
-                <button
-                  type="button"
-                  class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
-                >
-                  Kirim
-                </button>
-              </div>
-            </div>
-
-            <!-- Pengingat Tagihan -->
-            <div>
-              <h2 class="text-xl font-semibold text-amber-700 mb-3">
-                Kirim Pengingat Tagihan
-              </h2>
-              <div class="space-y-3">
-                <div>
-                  <label class="block text-sm text-gray-600"
-                    >Nomor Tujuan</label
-                  >
-                  <input
-                    type="text"
-                    placeholder="6281234567890"
-                    class="mt-1 w-full border rounded-md p-2"
-                  />
-                </div>
-                <div>
-                  <label class="block text-sm text-gray-600"
-                    >Jumlah Tagihan</label
-                  >
-                  <input
-                    type="text"
-                    placeholder="Rp 1.000.000"
-                    class="mt-1 w-full border rounded-md p-2"
-                  />
-                </div>
-                <div>
-                  <label class="block text-sm text-gray-600"
-                    >Tanggal Jatuh Tempo</label
-                  >
-                  <input
-                    type="date"
-                    class="mt-1 w-full border rounded-md p-2"
-                  />
-                </div>
-                <button
-                  type="button"
-                  class="bg-amber-600 text-white px-4 py-2 rounded-lg hover:bg-amber-700"
-                >
-                  Kirim
-                </button>
-              </div>
-            </div>
-          </form>
+      <section class="grid md:grid-cols-3 gap-8">
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center"
+        >
+          <i class="ri-megaphone-line text-green-600 text-5xl mb-4"></i>
+          <h3 class="text-xl font-bold text-green-600 mb-3">
+            Pengumuman Otomatis
+          </h3>
+          <p class="text-gray-600">
+            Kirim pengumuman penting, promo, atau notifikasi ke pelanggan tanpa
+            perlu mengirim satu per satu secara manual.
+          </p>
         </div>
 
-        <!-- Keterangan API -->
-        <div class="bg-white rounded-2xl shadow p-6 overflow-auto">
-          <h2 class="text-2xl font-semibold text-gray-700 mb-4">
-            Dokumentasi API
-          </h2>
-          <p class="text-gray-600 text-sm mb-4">
-            Gunakan endpoint berikut untuk integrasi dengan aplikasi Anda.
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center"
+        >
+          <i class="ri-receipt-line text-green-600 text-5xl mb-4"></i>
+          <h3 class="text-xl font-bold text-green-600 mb-3">
+            Kirim Nota Penjualan
+          </h3>
+          <p class="text-gray-600">
+            Setiap transaksi dapat langsung dikirimkan notanya ke WhatsApp
+            pelanggan secara otomatis, cepat, dan efisien.
           </p>
+        </div>
 
-          <div class="space-y-6 text-sm">
-            <div>
-              <h3 class="font-semibold text-indigo-700">POST /send</h3>
-              <p>Mengirim pesan teks cepat.</p>
-              <pre class="bg-gray-100 rounded p-3 overflow-auto mt-2"><code>{
-  "to": "6281234567890",
-  "message": "Halo, ini pesan otomatis."
-}</code></pre>
-            </div>
-
-            <div>
-              <h3 class="font-semibold text-green-700">POST /send-invoice</h3>
-              <p>Mengirim nota penjualan dengan link PDF.</p>
-              <pre class="bg-gray-100 rounded p-3 overflow-auto mt-2"><code>{
-  "to": "6281234567890",
-  "ref": "INV-001",
-  "invoice_url": "https://example.com/nota.pdf"
-}</code></pre>
-            </div>
-
-            <div>
-              <h3 class="font-semibold text-amber-700">POST /reminder</h3>
-              <p>Mengirim pengingat tagihan pelanggan.</p>
-              <pre class="bg-gray-100 rounded p-3 overflow-auto mt-2"><code>{
-  "to": "6281234567890",
-  "amount": 1000000,
-  "due_date": "2025-10-15"
-}</code></pre>
-            </div>
-
-            <div class="border-t pt-4">
-              <p class="text-gray-500 text-sm">
-                Gunakan header
-                <code>Authorization: Bearer &lt;API_KEY&gt;</code> jika
-                diperlukan oleh server Anda.
-              </p>
-            </div>
-          </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center"
+        >
+          <i class="ri-calendar-check-line text-green-600 text-5xl mb-4"></i>
+          <h3 class="text-xl font-bold text-green-600 mb-3">
+            Pengingat Tagihan Jatuh Tempo
+          </h3>
+          <p class="text-gray-600">
+            Otomatisasi pengingat pembayaran yang jatuh tempo agar pelanggan
+            tidak terlambat membayar dan arus kas bisnis tetap lancar.
+          </p>
         </div>
       </section>
 
-      <footer class="text-center mt-8 text-gray-500 text-sm">
-        © 2025 WA Messenger Otomasi. Semua hak dilindungi.
-      </footer>
-    </div>
+      <section class="mt-16 text-center">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/744/744502.png"
+          alt="Integration"
+          class="w-20 h-20 mx-auto mb-6"
+        />
+        <h2 class="text-2xl font-semibold mb-4">
+          Integrasi Mudah dengan Aplikasi Anda
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          API kami dirancang agar dapat terhubung langsung dengan berbagai jenis
+          sistem seperti aplikasi POS, CRM, ERP, dan lainnya. Integrasi cepat,
+          dokumentasi lengkap, dan dukungan teknis yang responsif.
+        </p>
+      </section>
+
+      <section class="mt-16 bg-green-100 p-10 rounded-2xl text-center">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/599/599502.png"
+          alt="Automation"
+          class="w-16 h-16 mx-auto mb-4"
+        />
+        <h2 class="text-2xl font-bold text-green-700 mb-4">
+          Mulai Otomatiskan Komunikasi Bisnis Anda Sekarang
+        </h2>
+        <p class="text-gray-700 mb-6">
+          Tingkatkan produktivitas dan pelayanan pelanggan dengan sistem pesan
+          otomatis berbasis WhatsApp.
+        </p>
+        <a
+          href="#"
+          class="bg-green-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-700 transition inline-flex items-center gap-2"
+        >
+          <i class="ri-rocket-line"></i> Pelajari Lebih Lanjut
+        </a>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-6 mt-16">
+      <div
+        class="container mx-auto px-6 text-center flex flex-col items-center gap-2"
+      >
+        <i class="ri-whatsapp-fill text-2xl text-green-400"></i>
+        <p>&copy; 2025 WA Messenger Otomasi. Semua hak cipta dilindungi.</p>
+      </div>
+    </footer>
   </body>
 </html>
